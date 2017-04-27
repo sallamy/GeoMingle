@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="adg-ws-Ege">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="GeoFeeds" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CIp-dB-R1g">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DLE-7G-MAS">
+                                <rect key="frame" x="38" y="378" width="298" height="40"/>
+                                <color key="backgroundColor" red="0.31372549019607843" green="0.48627450980392156" blue="0.75294117647058822" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Z4Y-zR-bQJ"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="-40" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Login With Facebook" image="fb.png"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="faceBookAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jvw-0c-wHw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Wj-Lk-5OJ">
+                                <rect key="frame" x="38" y="473" width="298" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.46666666666666667" blue="0.71764705882352942" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="POP-wQ-0rp"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="-40" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Login With LinkedIn" image="linked.png"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="linkedinAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7t1-bs-gVt"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connect With" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jzL-lo-pQ2">
+                                <rect key="frame" x="135.5" y="323" width="105" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Real Time Location Based on Network" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRQ-Ao-3o6">
+                                <rect key="frame" x="51" y="259" width="273" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="rUf-iC-qze">
+                                <rect key="frame" x="67" y="112" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="rUf-iC-qze" secondAttribute="height" multiplier="15:8" id="Mgw-hm-V8d"/>
+                                    <constraint firstAttribute="height" constant="128" id="dG0-z4-TLm"/>
+                                    <constraint firstAttribute="width" constant="240" id="fMh-4h-mFv"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.49803921569999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="jzL-lo-pQ2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FyT-w9-mUt"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="CIp-dB-R1g" secondAttribute="bottom" id="HrW-kw-geD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DLE-7G-MAS" secondAttribute="trailing" constant="23" id="Hyx-f0-8ho"/>
+                            <constraint firstItem="0Wj-Lk-5OJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="22" id="IAs-Wh-cO9"/>
+                            <constraint firstItem="CIp-dB-R1g" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="IFa-vU-MSf"/>
+                            <constraint firstItem="DLE-7G-MAS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KCP-gj-t8o"/>
+                            <constraint firstItem="CIp-dB-R1g" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Kkd-Mt-od0"/>
+                            <constraint firstAttribute="trailing" secondItem="CIp-dB-R1g" secondAttribute="trailing" id="NNA-jl-FAm"/>
+                            <constraint firstItem="jzL-lo-pQ2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="OiE-7s-LDH"/>
+                            <constraint firstItem="0Wj-Lk-5OJ" firstAttribute="top" secondItem="DLE-7G-MAS" secondAttribute="bottom" constant="55" id="XHT-cL-BRh"/>
+                            <constraint firstItem="0Wj-Lk-5OJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cOJ-6l-Yf8"/>
+                            <constraint firstItem="rUf-iC-qze" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ijc-Tt-0G5"/>
+                            <constraint firstItem="DLE-7G-MAS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="22" id="ktG-uV-f4S"/>
+                            <constraint firstItem="DLE-7G-MAS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="22" id="nrg-qh-L7Q"/>
+                            <constraint firstItem="aRQ-Ao-3o6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oSE-Ou-P7T"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0Wj-Lk-5OJ" secondAttribute="trailing" constant="23" id="pKf-yW-a3l"/>
+                            <constraint firstItem="aRQ-Ao-3o6" firstAttribute="top" secondItem="rUf-iC-qze" secondAttribute="bottom" constant="19" id="r7e-cs-GLF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DLE-7G-MAS" secondAttribute="trailing" constant="23" id="rVL-yX-7qf"/>
+                            <constraint firstItem="jzL-lo-pQ2" firstAttribute="top" secondItem="aRQ-Ao-3o6" secondAttribute="bottom" constant="47" id="tLe-VD-ADs"/>
+                            <constraint firstItem="DLE-7G-MAS" firstAttribute="top" secondItem="jzL-lo-pQ2" secondAttribute="bottom" constant="34" id="trA-Td-q3o"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="bJj-CO-heE"/>
+                    <connections>
+                        <segue destination="WKA-GP-meI" kind="show" identifier="TabSegue" id="IIY-Yr-1yf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="137.18140929535232"/>
+        </scene>
+        <!--Tab View Controller-->
+        <scene sceneID="l6d-0c-fR3">
+            <objects>
+                <tabBarController id="WKA-GP-meI" customClass="TabViewController" customModule="GeoFeeds" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="7br-jX-GSz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mf9-EU-UCC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1844" y="136.28185907046478"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1lk-1k-iwF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="adg-ws-Ege" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Edg-fR-2Pv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.49803921569999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="SKv-gB-8Xk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pjx-kA-WfZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fb.png" width="4" height="8"/>
+        <image name="linked.png" width="8" height="7"/>
+        <image name="logo.png" width="41" height="33"/>
+    </resources>
+</document>
