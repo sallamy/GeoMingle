@@ -31,9 +31,18 @@
                             <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uVb-Jd-H78">
                                 <rect key="frame" x="56" y="5" width="226" height="46"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="9ed-5U-1rO"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7xZ-ho-wU1">
+                                <rect key="frame" x="56" y="46" width="226" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="750" id="7NG-Xf-EWf"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J9r-oP-tUB">
                                 <rect key="frame" x="292" y="13" width="22" height="22"/>
                                 <constraints>
@@ -82,19 +91,23 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="J9r-oP-tUB" secondAttribute="trailing" constant="6" id="01T-dr-JyZ"/>
+                            <constraint firstItem="7xZ-ho-wU1" firstAttribute="leading" secondItem="l95-yz-tFB" secondAttribute="leading" constant="56" id="0Qh-SI-1NG"/>
                             <constraint firstItem="fPT-on-2zb" firstAttribute="top" secondItem="l95-yz-tFB" secondAttribute="top" constant="2" id="41Z-TY-tzX"/>
                             <constraint firstItem="uVb-Jd-H78" firstAttribute="leading" secondItem="fPT-on-2zb" secondAttribute="trailing" constant="4" id="5DU-t9-lto"/>
-                            <constraint firstAttribute="bottom" secondItem="uVb-Jd-H78" secondAttribute="bottom" constant="9" id="7vJ-EQ-d91"/>
+                            <constraint firstAttribute="bottom" secondItem="uVb-Jd-H78" secondAttribute="bottom" priority="750" constant="9" id="7vJ-EQ-d91"/>
                             <constraint firstAttribute="trailing" secondItem="b5j-zh-rLc" secondAttribute="trailing" id="9Ee-WV-wKz"/>
                             <constraint firstItem="J9r-oP-tUB" firstAttribute="leading" secondItem="T7Q-sH-qCB" secondAttribute="trailing" constant="20" id="9Sc-cf-r5d"/>
+                            <constraint firstItem="7xZ-ho-wU1" firstAttribute="top" secondItem="uVb-Jd-H78" secondAttribute="bottom" constant="-5" id="DtS-90-XBd"/>
                             <constraint firstItem="T7Q-sH-qCB" firstAttribute="top" secondItem="l95-yz-tFB" secondAttribute="top" constant="21" id="Tq0-DW-ATU"/>
-                            <constraint firstItem="daM-iW-T9S" firstAttribute="top" secondItem="uVb-Jd-H78" secondAttribute="bottom" constant="-8" id="VLt-ul-3Jj"/>
                             <constraint firstItem="fPT-on-2zb" firstAttribute="leading" secondItem="l95-yz-tFB" secondAttribute="leading" constant="8" id="cnK-yI-mjc"/>
-                            <constraint firstItem="b5j-zh-rLc" firstAttribute="top" secondItem="uVb-Jd-H78" secondAttribute="bottom" constant="-8" id="dC7-al-WeT"/>
                             <constraint firstItem="J9r-oP-tUB" firstAttribute="top" secondItem="l95-yz-tFB" secondAttribute="top" constant="13" id="dwG-us-cDy"/>
+                            <constraint firstAttribute="bottom" secondItem="b5j-zh-rLc" secondAttribute="bottom" constant="1" id="gDI-L8-puh"/>
+                            <constraint firstAttribute="bottom" secondItem="daM-iW-T9S" secondAttribute="bottom" constant="1" id="jgG-C8-D5H"/>
+                            <constraint firstAttribute="bottom" secondItem="7xZ-ho-wU1" secondAttribute="bottom" constant="14" id="lqk-jy-Dae"/>
                             <constraint firstItem="daM-iW-T9S" firstAttribute="leading" secondItem="l95-yz-tFB" secondAttribute="leading" id="nV9-5V-xSW"/>
                             <constraint firstItem="J9r-oP-tUB" firstAttribute="leading" secondItem="uVb-Jd-H78" secondAttribute="trailing" constant="10" id="sAp-dH-IoC"/>
                             <constraint firstItem="T7Q-sH-qCB" firstAttribute="leading" secondItem="fPT-on-2zb" secondAttribute="trailing" constant="4" id="sHt-mr-TKP"/>
+                            <constraint firstAttribute="trailing" secondItem="7xZ-ho-wU1" secondAttribute="trailing" constant="38" id="xJl-mr-3vS"/>
                             <constraint firstItem="uVb-Jd-H78" firstAttribute="top" secondItem="l95-yz-tFB" secondAttribute="top" constant="5" id="yX8-3J-vrx"/>
                         </constraints>
                     </view>
@@ -111,6 +124,8 @@
                 <outlet property="attachmentsBtn" destination="J9r-oP-tUB" id="IJI-75-sE1"/>
                 <outlet property="cancelBtn" destination="daM-iW-T9S" id="uv9-zR-lx0"/>
                 <outlet property="hintLabel" destination="T7Q-sH-qCB" id="OPx-6Y-OSc"/>
+                <outlet property="imageHeight" destination="7NG-Xf-EWf" id="pSt-Bp-dCH"/>
+                <outlet property="imagePreview" destination="7xZ-ho-wU1" id="fBd-wK-rh1"/>
                 <outlet property="myImageView" destination="fPT-on-2zb" id="Pw4-qF-hS2"/>
                 <outlet property="postBtn" destination="b5j-zh-rLc" id="NBs-lH-LQ0"/>
                 <outlet property="postTextView" destination="uVb-Jd-H78" id="gQ0-p6-C2z"/>

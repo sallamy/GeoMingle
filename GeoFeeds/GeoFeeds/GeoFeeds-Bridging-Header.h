@@ -7,3 +7,4 @@
 #import "SVPullToRefresh.h"
 #import "GeoDataCenter.h"
 #import "MBProgressHUD.h"
+#import "IQKeyboardManager.h"

@@ -16,6 +16,8 @@ protocol AddPostDelegate {
 }
 class AddPostTableViewCell: UITableViewCell,UITextViewDelegate {
 
+    @IBOutlet weak var imageHeight: NSLayoutConstraint!
+    @IBOutlet weak var imagePreview: UIImageView!
     @IBOutlet weak var hintLabel: UILabel!
     @IBOutlet weak var cancelBtn: UIButton!
     @IBOutlet weak var postBtn: UIButton!
@@ -51,5 +53,8 @@ class AddPostTableViewCell: UITableViewCell,UITextViewDelegate {
 
         // Configure the view for the selected state
     }
+    
+    
+    
     
 }

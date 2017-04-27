@@ -104,6 +104,10 @@
 		FFB93D771EB1253800AA663C /* share@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFB93D631EB1253800AA663C /* share@2x.png */; };
 		FFB93D781EB1253800AA663C /* share@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFB93D641EB1253800AA663C /* share@3x.png */; };
 		FFB93D7A1EB125F800AA663C /* like@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFB93D791EB125F800AA663C /* like@2x.png */; };
+		FFB93D7D1EB221F800AA663C /* PostDetailsAndCommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB93D7B1EB221F800AA663C /* PostDetailsAndCommentsViewController.swift */; };
+		FFB93D7E1EB221F800AA663C /* PostDetailsAndCommentsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFB93D7C1EB221F800AA663C /* PostDetailsAndCommentsViewController.xib */; };
+		FFB93D811EB2222100AA663C /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB93D7F1EB2222100AA663C /* CommentTableViewCell.swift */; };
+		FFB93D821EB2222100AA663C /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFB93D801EB2222100AA663C /* CommentTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -267,6 +271,10 @@
 		FFB93D631EB1253800AA663C /* share@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share@2x.png"; sourceTree = "<group>"; };
 		FFB93D641EB1253800AA663C /* share@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share@3x.png"; sourceTree = "<group>"; };
 		FFB93D791EB125F800AA663C /* like@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "like@2x.png"; sourceTree = "<group>"; };
+		FFB93D7B1EB221F800AA663C /* PostDetailsAndCommentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailsAndCommentsViewController.swift; sourceTree = "<group>"; };
+		FFB93D7C1EB221F800AA663C /* PostDetailsAndCommentsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostDetailsAndCommentsViewController.xib; sourceTree = "<group>"; };
+		FFB93D7F1EB2222100AA663C /* CommentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		FFB93D801EB2222100AA663C /* CommentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -546,8 +554,10 @@
 			isa = PBXGroup;
 			children = (
 				FFB470121EB0E03500393E7F /* cell */,
-				FFB46ECE1EB0BC4900393E7F /* StreamViewController.swift */,
 				FFB4701B1EB0F42200393E7F /* Feed.swift */,
+				FFB93D7B1EB221F800AA663C /* PostDetailsAndCommentsViewController.swift */,
+				FFB93D7C1EB221F800AA663C /* PostDetailsAndCommentsViewController.xib */,
+				FFB46ECE1EB0BC4900393E7F /* StreamViewController.swift */,
 				FFB46ECF1EB0BC4900393E7F /* StreamViewController.xib */,
 			);
 			name = Stream;
@@ -610,6 +620,8 @@
 				FFB470141EB0E04E00393E7F /* PostTableViewCell.xib */,
 				FFB470171EB0E05B00393E7F /* AddPostTableViewCell.swift */,
 				FFB470181EB0E05B00393E7F /* AddPostTableViewCell.xib */,
+				FFB93D7F1EB2222100AA663C /* CommentTableViewCell.swift */,
+				FFB93D801EB2222100AA663C /* CommentTableViewCell.xib */,
 			);
 			name = cell;
 			sourceTree = "<group>";
@@ -781,9 +793,11 @@
 				FFB93D721EB1253800AA663C /* linked@3x.png in Resources */,
 				FFB93D701EB1253800AA663C /* linked.png in Resources */,
 				FFB93D671EB1253800AA663C /* attach@3x.png in Resources */,
+				FFB93D7E1EB221F800AA663C /* PostDetailsAndCommentsViewController.xib in Resources */,
 				FFB93D6F1EB1253800AA663C /* like@3x.png in Resources */,
 				FFB93D731EB1253800AA663C /* logo.png in Resources */,
 				FFB93D761EB1253800AA663C /* share.png in Resources */,
+				FFB93D821EB2222100AA663C /* CommentTableViewCell.xib in Resources */,
 				FFB46ED91EB0BC6500393E7F /* MessagesViewController.xib in Resources */,
 				FFB4701A1EB0E05B00393E7F /* AddPostTableViewCell.xib in Resources */,
 				FFB46EE11EB0BC8200393E7F /* NotificationsViewController.xib in Resources */,
@@ -831,6 +845,7 @@
 				FFB46F791EB0D79200393E7F /* IQUIScrollView+Additions.m in Sources */,
 				FFB46F841EB0D79200393E7F /* IQToolbar.m in Sources */,
 				FFB46F7D1EB0D79200393E7F /* IQUIWindow+Hierarchy.m in Sources */,
+				FFB93D7D1EB221F800AA663C /* PostDetailsAndCommentsViewController.swift in Sources */,
 				FFB46FA71EB0D79200393E7F /* UIScrollView+SVInfiniteScrolling.m in Sources */,
 				FFB46F7B1EB0D79200393E7F /* IQUIView+Hierarchy.m in Sources */,
 				FFB46F971EB0D79200393E7F /* SDWebImageManager.m in Sources */,
@@ -868,6 +883,7 @@
 				FFB46F9B1EB0D79200393E7F /* UIImage+MultiFormat.m in Sources */,
 				FFB46F941EB0D79200393E7F /* SDWebImageDecoder.m in Sources */,
 				FFB46EBD1EB0B98D00393E7F /* LoginViewController.swift in Sources */,
+				FFB93D811EB2222100AA663C /* CommentTableViewCell.swift in Sources */,
 				FFB46F801EB0D79200393E7F /* IQTextView.m in Sources */,
 				FFB470421EB0FA1E00393E7F /* JSONKit.m in Sources */,
 				FFB46EBB1EB0B98D00393E7F /* AppDelegate.swift in Sources */,
